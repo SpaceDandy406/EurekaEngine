@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EurekaEngine", "EurekaEngine.csproj", "{BF17481F-4F5F-49FD-B4F8-B8788474818B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Debug|x64.ActiveCfg = Debug|x64
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Debug|x64.Build.0 = Debug|x64
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Debug|x86.Build.0 = Debug|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Release|x64.ActiveCfg = Release|x64
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Release|x64.Build.0 = Release|x64
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BF17481F-4F5F-49FD-B4F8-B8788474818B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11C4651D-2A28-41C4-BACE-DDA871312520}
+	EndGlobalSection
+EndGlobal

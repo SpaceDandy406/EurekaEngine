@@ -1,0 +1,4 @@
+/EurekaEngine/bin/*
+/EurekaEngine/obj/*
+/EurekaEngine/.vs/*
+/EurekaEngine/EurekaEngine.csproj.user
