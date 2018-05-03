@@ -2,3 +2,5 @@
 /EurekaEngine/obj/*
 /EurekaEngine/.vs/*
 /EurekaEngine/EurekaEngine.csproj.user
+/EurekaEngineConsole/bin/*
+/EurekaEngineConsole/obj/*
