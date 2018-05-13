@@ -1,12 +1,16 @@
-﻿namespace EurekaEngine
+﻿using System.Threading;
+
+namespace EurekaEngine
 {
-    public static class EurekaGame
+    public class EurekaGame
     {
+        private Thread _mainLoopThread;
+        private ManualResetEvent _endMainGameLoop = new ManualResetEvent(false);
         private static IInputManager _inputManager;
         private static IOutputManager _outputManager;
         private static IGameBuilder _builder;
 
-        public static void Init(IRegistrator registrator)
+        public void Init(IRegistrator registrator)
         {
             _builder = new GameBuilder();
             registrator.Register(_builder);
@@ -14,11 +18,21 @@
             _outputManager = _builder.GetImpl<IOutputManager>();
         }
 
-        public static void Start()
+        public void Start()
         {
-            while(true)
+            _mainLoopThread = new Thread(MainLoop);
+            _mainLoopThread.Start();
+            _endMainGameLoop.WaitOne();
+        }
+
+        private void MainLoop()
+        {
+            while (true)
             {
+
             }
+
+            _endMainGameLoop.Set();
         }
     }
 }
