@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrawLoopExecutor.cs" />
     <Compile Include="InputeManager.cs" />
     <Compile Include="OutputManager.cs" />
     <Compile Include="Program.cs" />

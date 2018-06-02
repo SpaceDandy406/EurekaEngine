@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="EurekaGame.cs" />
     <Compile Include="GameBuilder.cs" />
+    <Compile Include="IDrawLoopExecutor.cs" />
     <Compile Include="IGameBuilder.cs" />
     <Compile Include="IInputManager.cs" />
     <Compile Include="IOutputManager.cs" />

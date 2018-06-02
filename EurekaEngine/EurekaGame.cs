@@ -8,6 +8,7 @@ namespace EurekaEngine
         private ManualResetEvent _endMainGameLoop = new ManualResetEvent(false);
         private static IInputManager _inputManager;
         private static IOutputManager _outputManager;
+        private static IDrawLoopExecutor _drawLoopExecutor;
         private static IGameBuilder _builder;
 
         public void Init(IRegistrator registrator)
@@ -16,6 +17,7 @@ namespace EurekaEngine
             registrator.Register(_builder);
             _inputManager = _builder.GetImpl<IInputManager>();
             _outputManager = _builder.GetImpl<IOutputManager>();
+            _drawLoopExecutor = _builder.GetImpl<IDrawLoopExecutor>();
         }
 
         public void Start()
@@ -29,7 +31,7 @@ namespace EurekaEngine
         {
             while (true)
             {
-
+				_drawLoopExecutor.ExecuteDrawLoop();
             }
 
             _endMainGameLoop.Set();
